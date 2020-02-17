@@ -1,0 +1,16 @@
+<form [formGroup]="noteFormGroup">
+  <div class="form-group">
+    <label for="fileTrackingID">FileTracking ID:</label>
+    <input type="text" class="form-control" formControlName="fileTrackingID">
+  </div>
+  <div class="form-group">
+    <label for="analystNote">Note:</label>
+    <input type="text" class="form-control" formControlName="analystNote">
+  </div>
+  <div class="form-group">
+      <label for="userName">User:</label>
+      <input type="text" class="form-control" formControlName="userName">
+    </div>
+  <!-- <button type="submit" class="btn btn-success">Submit</button> -->
+  <button type="button" class="btn btn-success" (click)="saveNoteObject(noteFormGroup.value)">Submit</button>
+</form>
